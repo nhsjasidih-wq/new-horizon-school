@@ -1,1 +1,81 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>New Horizon School | Jasidih</title>
+<style>
+*{box-sizing:border-box}
+body{margin:0;font-family:Arial,sans-serif;background:#f8f7f2;color:#102746}
+header{background:#102746;color:white;padding:22px 6%;display:flex;justify-content:space-between;align-items:center;gap:15px;flex-wrap:wrap}
+header h2{margin:0;font-size:18px}
+header small{color:#f1d99b}
+nav{display:flex;gap:15px;flex-wrap:wrap}
+nav a{color:white;text-decoration:none;font-size:13px}
+.hero{padding:95px 7%;text-align:center;background:linear-gradient(135deg,#102746,#254d91);color:white}
+.hero small{color:#f1d99b;letter-spacing:3px}
+.hero h1{font-size:clamp(36px,7vw,60px);line-height:1.15}
+.hero h1 span{color:#f1d99b}
+.hero p{max-width:600px;margin:20px auto 30px;line-height:1.8}
+.btn{display:inline-block;background:#d8ad53;color:#102746;padding:13px 22px;border-radius:5px;text-decoration:none;font-weight:bold}
+section{padding:60px 7%;text-align:center}
+h2 span{color:#d9212b}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:18px;margin-top:30px}
+.card{background:white;padding:25px;border:1px solid #e6e5df;border-radius:10px;text-align:left}
+.card p{color:#697589;line-height:1.7}
+#contact{background:#e9edf3}
+footer{background:#091a30;color:white;text-align:center;padding:25px;font-size:13px}
+</style>
+</head>
+<body>
+<header>
+<div>
+<h2>NEW HORIZON SCHOOL</h2>
+<small>JASIDIH · ESTD. 2001</small>
+</div>
+<nav>
+<a href="#home">Home</a>
+<a href="#about">About</a>
+<a href="#academics">Academics</a>
+<a href="#admissions">Admissions</a>
+<a href="#contact">Contact</a>
+</nav>
+</header>
+<main>
+<div class="hero" id="home">
+<small>LEARN · GROW · SUCCEED</small>
+<h1>Every Learner.<br><span>A Brighter Horizon.</span></h1>
+<p>Welcome to New Horizon School, Jasidih — a place to learn, explore and grow with confidence.</p>
+<a class="btn" href="#admissions">Explore Admissions ↗</a>
+</div>
+<section id="about">
+<h2>Welcome to <span>Our School</span></h2>
+<p>Established in 2001, New Horizon School, Jasidih, aims to support learning, curiosity and personal growth.</p>
+</section>
+<section id="academics">
+<h2>Discover Our School</h2>
+<div class="cards">
+<div class="card"><h3>Academic Learning</h3><p>Build knowledge and understanding step by step.</p></div>
+<div class="card"><h3>Character & Values</h3><p>Encourage respect, teamwork and responsibility.</p></div>
+<div class="card"><h3>Skills for Life</h3><p>Develop creativity, communication and confidence.</p></div>
+</div>
+</section>
+<section id="admissions">
+<h2>Admissions <span>Enquiry</span></h2>
+<p>Contact the school office for current admission details.</p>
+<a class="btn" href="#contact">Contact the School</a>
+</section>
+<section id="contact">
+<h2>Contact Us</h2>
+<p>New Horizon School, Jasidih, Jharkhand</p>
+<p>Add the school's official phone number and email.</p>
+</section>
+</main>
+<footer>
+<p>© <span id="year"></span> New Horizon School, Jasidih</p>
+<p>Winners don't do different things, they do things differently.</p>
+</footer>
+<script>document.getElementById('year').textContent=new Date().getFullYear();</script>
+</body>
+</html>

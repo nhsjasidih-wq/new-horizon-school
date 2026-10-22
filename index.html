@@ -1,81 +1,59 @@
-
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
+<meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>New Horizon School | Jasidih</title>
+<meta name="theme-color" content="#102746">
+<meta name="description" content="New Horizon School, Jasidih — official school information, notices, gallery and results.">
+<title>New Horizon School, Jasidih</title>
 <style>
-*{box-sizing:border-box}
-body{margin:0;font-family:Arial,sans-serif;background:#f8f7f2;color:#102746}
-header{background:#102746;color:white;padding:22px 6%;display:flex;justify-content:space-between;align-items:center;gap:15px;flex-wrap:wrap}
-header h2{margin:0;font-size:18px}
-header small{color:#f1d99b}
-nav{display:flex;gap:15px;flex-wrap:wrap}
-nav a{color:white;text-decoration:none;font-size:13px}
-.hero{padding:95px 7%;text-align:center;background:linear-gradient(135deg,#102746,#254d91);color:white}
-.hero small{color:#f1d99b;letter-spacing:3px}
-.hero h1{font-size:clamp(36px,7vw,60px);line-height:1.15}
-.hero h1 span{color:#f1d99b}
-.hero p{max-width:600px;margin:20px auto 30px;line-height:1.8}
-.btn{display:inline-block;background:#d8ad53;color:#102746;padding:13px 22px;border-radius:5px;text-decoration:none;font-weight:bold}
-section{padding:60px 7%;text-align:center}
-h2 span{color:#d9212b}
-.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:18px;margin-top:30px}
-.card{background:white;padding:25px;border:1px solid #e6e5df;border-radius:10px;text-align:left}
-.card p{color:#697589;line-height:1.7}
-#contact{background:#e9edf3}
-footer{background:#091a30;color:white;text-align:center;padding:25px;font-size:13px}
+:root{--navy:#102746;--navy2:#1b416d;--red:#c92330;--gold:#e5b957;--cream:#faf8f1;--ink:#17283d;--muted:#657184;--line:#e5e8ed}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:100px}body{margin:0;color:var(--ink);font:16px/1.65 Arial,Helvetica,sans-serif}a{color:inherit}.topbar{background:#08182c;color:#f0d69a;display:flex;justify-content:space-between;gap:12px;padding:7px 5%;font-size:10px;letter-spacing:1.4px}.header{position:sticky;top:0;z-index:50;background:#fff;display:flex;align-items:center;justify-content:space-between;gap:20px;padding:13px 5%;box-shadow:0 4px 20px #0d25400e}.brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--navy);min-width:0}.brand-logo{width:52px;height:52px;object-fit:contain}.brand-fallback{display:grid;place-items:center;width:52px;height:52px;border-radius:50%;border:3px solid var(--gold);background:var(--navy);color:var(--gold);font-weight:bold}.brand-copy{line-height:1.35}.brand-copy strong{display:block;font-size:14px;letter-spacing:.2px}.brand-copy small{display:block;color:#947027;font-size:10px;letter-spacing:1.2px;margin-top:4px}.nav{display:flex;align-items:center;gap:15px}.nav a{text-decoration:none;color:#35445a;font-size:12px;font-weight:bold;white-space:nowrap}.nav a:hover{color:var(--red)}.nav .nav-button{background:var(--red);color:white;padding:10px 13px;border-radius:4px}.menu-toggle{display:none;border:0;border-radius:4px;background:var(--navy);color:white;font-size:21px;padding:7px 12px}.hero{position:relative;min-height:560px;display:flex;align-items:center;color:white;background:linear-gradient(90deg,#091a30f2 0%,#102746dc 50%,#10274645 100%),url('https://images.unsplash.com/photo-1562774053-701939374585?auto=format&fit=crop&w=1900&q=85') center/cover}.hero-inner{width:88%;max-width:1120px;margin:auto;padding:76px 0}.eyebrow,.section-label{font-size:11px;letter-spacing:2.4px;font-weight:bold;color:#9d772b}.hero .eyebrow{color:var(--gold)}.hero h1{font-size:clamp(42px,6vw,70px);line-height:1.08;letter-spacing:-1.8px;margin:18px 0}.hero h1 span,.admissions h2 span{color:var(--gold)}.hero p{max-width:570px;color:#e0e7f0}.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:27px}.btn{display:inline-block;text-decoration:none;padding:12px 18px;font-size:13px;font-weight:bold;border-radius:4px}.btn-gold{background:var(--gold);color:var(--navy)}.btn-outline{border:1px solid #ffffff99;color:white}.section{padding:72px 7%}.section h2{font-size:clamp(30px,4vw,43px);line-height:1.2;letter-spacing:-.8px;margin:10px 0 18px}.section h2 span{color:var(--red)}.muted{color:var(--muted)}.intro-grid,.facility-grid,.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center}.lead{font-size:20px;font-weight:bold;color:var(--navy)}.values,.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:17px;margin-top:35px}.value,.card{border:1px solid var(--line);background:#fff;padding:23px}.value .symbol{font-size:23px;color:var(--red)}.value p,.card p{font-size:13px;color:var(--muted)}.soft{background:var(--cream)}.center{text-align:center;max-width:680px;margin:0 auto 34px}.card h3{margin:7px 0}.classroom-img{width:100%;height:370px;object-fit:cover}.facility-list{padding:0;list-style:none}.facility-list li{padding:12px 0;border-top:1px solid var(--line);font-size:14px}.facility-list li:before{content:"✓";color:var(--red);font-weight:bold;margin-right:10px}.gallery-grid{display:grid;grid-template-columns:1.2fr 1fr 1fr;gap:13px}.gallery-grid figure{margin:0;background:#fff;overflow:hidden}.gallery-grid img{display:block;width:100%;height:175px;object-fit:cover;transition:transform .25s}.gallery-grid figure:hover img{transform:scale(1.03)}.gallery-grid .large{grid-row:span 2}.gallery-grid .large img{height:100%;min-height:365px}.gallery-grid figcaption{padding:11px 12px;font-size:13px;font-weight:bold}.gallery-grid figcaption small{display:block;font-weight:normal;color:var(--muted)}.notice-list{max-width:1000px;margin:auto}.notice-row{display:grid;grid-template-columns:68px 1fr auto;gap:17px;align-items:center;padding:19px 0;border-top:1px solid var(--line)}.notice-tag{background:var(--cream);padding:8px;text-align:center;font-size:10px;color:var(--red);font-weight:bold}.notice-row h3{margin:0;font-size:15px}.notice-row p{margin:4px 0;color:var(--muted);font-size:13px}.tag{font-size:10px;color:#947027;letter-spacing:1px}.result-card{max-width:950px;margin:auto;background:white;border:1px solid var(--line);display:grid;grid-template-columns:1fr 1fr;gap:30px;padding:28px;align-items:center}.result-card h3{margin:0 0 8px}.result-card p{font-size:13px;color:var(--muted)}.result-badge{background:#f7f1df;color:#7d5c17;display:inline-block;padding:5px 9px;font-size:10px;font-weight:bold;letter-spacing:1px}.download-placeholder{background:#f5f6f8;border:1px dashed #cbd1da;padding:22px;text-align:center}.download-placeholder .btn{background:var(--navy);color:white;opacity:.55;cursor:not-allowed}.admissions{padding:72px 7%;text-align:center;color:white;background:linear-gradient(100deg,#091a30f0,#173c68e8),url('https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&w=1600&q=85') center/cover}.admissions h2{font-size:clamp(35px,5vw,55px);line-height:1.12}.admissions .section-label{color:var(--gold)}.contact-card{background:var(--cream);padding:28px;border-top:4px solid var(--gold)}.contact-card p{font-size:13px;color:var(--muted)}.note{font-size:11px;color:#858d99;margin-top:17px}.footer{background:#08182c;color:white;padding:30px 7% 16px}.footer-bottom{display:flex;justify-content:space-between;gap:10px;border-top:1px solid #ffffff25;padding-top:15px;margin-top:18px;color:#d0d8e2;font-size:11px}.footer a{color:var(--gold);text-decoration:none}.footer-motto{font-style:italic;color:#d6dce5;font-size:12px}
+@media(max-width:900px){.header{padding:12px 4%}.nav{gap:10px}.nav a{font-size:11px}.brand-copy strong{font-size:12px}.brand-logo,.brand-fallback{width:44px;height:44px}.section{padding:60px 5%}}
+@media(max-width:700px){.topbar{font-size:9px;padding:7px 4%}.header{flex-wrap:wrap;padding:11px 5%}.menu-toggle{display:block}.nav{display:none;flex-basis:100%;flex-direction:column;align-items:stretch;gap:0}.nav.open{display:flex}.nav a{padding:11px 4px;border-top:1px solid var(--line);font-size:14px}.nav .nav-button{text-align:center;margin-top:8px}.hero{min-height:555px;background-position:58% center}.hero-inner{width:88%;padding:65px 0}.hero h1{font-size:43px;letter-spacing:-1px}.hero p{font-size:14px}.actions .btn{width:100%;text-align:center}.section{padding:55px 6%}.intro-grid,.facility-grid,.contact-grid{grid-template-columns:1fr;gap:18px}.values,.cards{grid-template-columns:1fr;gap:12px}.classroom-img{height:250px}.gallery-grid{grid-template-columns:1fr 1fr;gap:9px}.gallery-grid .large{grid-column:span 2;grid-row:auto}.gallery-grid .large img{height:225px;min-height:0}.gallery-grid img{height:135px}.notice-row{grid-template-columns:50px 1fr;gap:10px}.notice-row .tag{grid-column:2}.result-card{grid-template-columns:1fr;padding:20px;gap:15px}.footer-bottom{flex-direction:column}}
 </style>
 </head>
 <body>
-<header>
-<div>
-<h2>NEW HORIZON SCHOOL</h2>
-<small>JASIDIH · ESTD. 2001</small>
-</div>
-<nav>
-<a href="#home">Home</a>
-<a href="#about">About</a>
-<a href="#academics">Academics</a>
-<a href="#admissions">Admissions</a>
-<a href="#contact">Contact</a>
+<div class="topbar"><span>NEW HORIZON SCHOOL · JASIDIH</span><span>ESTD. 2001</span></div>
+<header class="header">
+<a class="brand" href="#home" aria-label="New Horizon School home">
+<img class="brand-logo" src="assets/school-logo.png" alt="School logo" onerror="this.hidden=true;this.nextElementSibling.hidden=false">
+<span class="brand-fallback" hidden>NH</span>
+<span class="brand-copy"><strong>NEW HORIZON SCHOOL</strong><small>JASIDIH · ESTD. 2001</small></span>
+</a>
+<button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="mainNav" aria-label="Open menu">☰</button>
+<nav class="nav" id="mainNav">
+<a href="#home">Home</a><a href="#about">About</a><a href="#academics">Academics</a><a href="#classrooms">Classrooms</a><a href="#occasions">Occasions</a><a href="#gallery">Photo Gallery</a><a href="#notices">Notices</a><a href="#results">Class 10 Results</a><a class="nav-button" href="#admissions">Admissions</a>
 </nav>
 </header>
 <main>
-<div class="hero" id="home">
-<small>LEARN · GROW · SUCCEED</small>
-<h1>Every Learner.<br><span>A Brighter Horizon.</span></h1>
-<p>Welcome to New Horizon School, Jasidih — a place to learn, explore and grow with confidence.</p>
-<a class="btn" href="#admissions">Explore Admissions ↗</a>
-</div>
-<section id="about">
-<h2>Welcome to <span>Our School</span></h2>
-<p>Established in 2001, New Horizon School, Jasidih, aims to support learning, curiosity and personal growth.</p>
-</section>
-<section id="academics">
-<h2>Discover Our School</h2>
-<div class="cards">
-<div class="card"><h3>Academic Learning</h3><p>Build knowledge and understanding step by step.</p></div>
-<div class="card"><h3>Character & Values</h3><p>Encourage respect, teamwork and responsibility.</p></div>
-<div class="card"><h3>Skills for Life</h3><p>Develop creativity, communication and confidence.</p></div>
-</div>
-</section>
-<section id="admissions">
-<h2>Admissions <span>Enquiry</span></h2>
-<p>Contact the school office for current admission details.</p>
-<a class="btn" href="#contact">Contact the School</a>
-</section>
-<section id="contact">
-<h2>Contact Us</h2>
-<p>New Horizon School, Jasidih, Jharkhand</p>
-<p>Add the school's official phone number and email.</p>
-</section>
+<section class="hero" id="home"><div class="hero-inner"><div class="eyebrow">LEARN · GROW · SUCCEED</div><p>WELCOME TO</p><h1>Every learner.<br><span>A brighter horizon.</span></h1><p>A place to discover potential, build confidence and grow through learning.</p><div class="actions"><a class="btn btn-gold" href="#admissions">Admission Enquiry ↗</a><a class="btn btn-outline" href="#about">Discover Our School</a></div></div></section>
+
+<section class="section" id="about"><div class="section-label">A SCHOOL WITH A VISION</div><div class="intro-grid"><h2>Welcome to <span>New Horizon</span></h2><div><p class="lead">Helping every learner move towards a brighter future.</p><p class="muted">Established in 2001, New Horizon School, Jasidih, aims to support learning, curiosity, character and personal growth.</p></div></div><div class="values"><article class="value"><div class="symbol">✦</div><h3>Learn with purpose</h3><p>Build understanding, curiosity and a love of learning.</p></article><article class="value"><div class="symbol">◇</div><h3>Grow with values</h3><p>Encourage respect, honesty, responsibility and teamwork.</p></article><article class="value"><div class="symbol">↗</div><h3>Prepare for tomorrow</h3><p>Develop confidence, creativity and life skills.</p></article></div></section>
+
+<section class="section soft" id="academics"><div class="center"><div class="section-label">LEARNING & DEVELOPMENT</div><h2>Learning that <span>opens doors</span></h2><p class="muted">Supporting students through a balanced learning journey.</p></div><div class="cards"><article class="card"><div class="section-label">01</div><h3>Academic Learning</h3><p>Build strong foundations through classroom learning and guided practice.</p></article><article class="card"><div class="section-label">02</div><h3>Creative Thinking</h3><p>Encourage questions, projects and exploration.</p></article><article class="card"><div class="section-label">03</div><h3>Character & Values</h3><p>Support good habits, kindness, discipline and respect.</p></article></div><p class="note">Confirm classes and curriculum with the school office before publishing exact claims.</p></section>
+
+<section class="section" id="classrooms"><div class="facility-grid"><img class="classroom-img" src="https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=1200&q=85" alt="Illustrative classroom photo" loading="lazy"><div><div class="section-label">OUR LEARNING SPACES</div><h2>Classrooms made for <span>curiosity</span></h2><p class="muted">A welcoming classroom encourages students to ask questions, share ideas and learn together.</p><ul class="facility-list"><li>Classroom learning</li><li>Teacher-guided activities</li><li>Group work and participation</li></ul><p class="note">Photo is illustrative. Replace it with an approved photo of the school's actual classroom.</p></div></div></section>
+
+<section class="section soft" id="occasions"><div class="center"><div class="section-label">SCHOOL LIFE</div><h2>Celebrations & <span>occasions</span></h2><p class="muted">A section for school events, annual functions, cultural programmes, sports days and national celebrations.</p></div><div class="gallery-grid"><figure class="large"><img src="https://images.unsplash.com/photo-1529390079861-591de354faf5?auto=format&fit=crop&w=1200&q=85" alt="Illustrative school group activity" loading="lazy"><figcaption>School activities<small>Replace with a real event photo</small></figcaption></figure><figure><img src="https://images.unsplash.com/photo-1502687832-0a5e7f7b1e2b?auto=format&fit=crop&w=900&q=85" alt="Illustrative outdoor activity" loading="lazy"><figcaption>Sports & activities<small>Event photos</small></figcaption></figure><figure><img src="https://images.unsplash.com/photo-1511632765486-a01980e01a18?auto=format&fit=crop&w=900&q=85" alt="Illustrative celebration" loading="lazy"><figcaption>Celebrations<small>Annual and cultural events</small></figcaption></figure></div><p class="note">Illustrative photos only; replace with school-approved photos and correct event captions.</p></section>
+
+<section class="section" id="gallery"><div class="center"><div class="section-label">MOMENTS THAT MATTER</div><h2>School <span>photo gallery</span></h2><p class="muted">Classroom moments, activities, campus and special days.</p></div><div class="gallery-grid"><figure class="large"><img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&w=1200&q=85" alt="Illustrative students learning" loading="lazy"><figcaption>Learning together<small>Classroom moments</small></figcaption></figure><figure><img src="https://images.unsplash.com/photo-1427504494785-3a9ca7044f45?auto=format&fit=crop&w=900&q=85" alt="Illustrative study scene" loading="lazy"><figcaption>Study time<small>Learning activities</small></figcaption></figure><figure><img src="https://images.unsplash.com/photo-1577896851231-70ef18881754?auto=format&fit=crop&w=900&q=85" alt="Illustrative teacher with students" loading="lazy"><figcaption>Guided learning<small>Teacher and students</small></figcaption></figure><figure><img src="https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=900&q=85" alt="Illustrative classroom scene" loading="lazy"><figcaption>Our classrooms<small>Learning spaces</small></figcaption></figure><figure><img src="https://images.unsplash.com/photo-1529390079861-591de354faf5?auto=format&fit=crop&w=900&q=85" alt="Illustrative school activity" loading="lazy"><figcaption>Activities<small>School life</small></figcaption></figure></div><p class="note">These are illustrative stock photos, not verified photos of New Horizon School. Replace them before public use.</p></section>
+
+<section class="section soft" id="notices"><div class="center"><div class="section-label">OFFICIAL UPDATES</div><h2>Notice <span>board</span></h2><p class="muted">Official notices can be added here by the school administration.</p></div><div class="notice-list"><article class="notice-row"><div class="notice-tag">NOTICE<br>01</div><div><h3>Admission information</h3><p>Contact the school office for confirmed dates, eligibility and required documents.</p></div><span class="tag">GENERAL</span></article><article class="notice-row"><div class="notice-tag">NOTICE<br>02</div><div><h3>School events and holidays</h3><p>Confirmed event dates and holiday announcements will be posted here.</p></div><span class="tag">UPDATE</span></article><article class="notice-row"><div class="notice-tag">NOTICE<br>03</div><div><h3>Parent communication</h3><p>School circulars can be listed here after they are approved for public display.</p></div><span class="tag">CIRCULAR</span></article></div><p class="note">Placeholder notices only. These are not official announcements.</p></section>
+
+<section class="section" id="results"><div class="center"><div class="section-label">ACADEMIC ACHIEVEMENTS</div><h2>Class 10 Board <span>Results</span></h2><p class="muted">A dedicated section for verified Class 10 board-result announcements.</p></div><div class="result-card"><div><span class="result-badge">RESULTS SECTION READY</span><h3>Class 10 Board Examination</h3><p>Year, board name, school performance and official result links will be added after the school confirms the details.</p><p><strong>Not published yet.</strong> No student marks or result claims are displayed until verified information is provided.</p></div><div class="download-placeholder"><h3>Download Result</h3><p>Result PDF or official link will be added here later.</p><span class="btn">Coming soon</span></div></div><p class="note">For student privacy, publish individual student results only with school authorization and appropriate consent. Avoid posting roll numbers or personal details publicly.</p></section>
+
+<section class="admissions" id="admissions"><div class="section-label">TAKE THE NEXT STEP</div><h2>Start your child's<br><span>learning journey.</span></h2><p>For admission details, contact the school office.</p><a class="btn btn-gold" href="#contact">Admission Enquiry ↗</a></section>
+
+<section class="section" id="contact"><div class="contact-grid"><div><div class="section-label">GET IN TOUCH</div><h2>We'd be glad to <span>hear from you.</span></h2><p class="muted">Contact New Horizon School, Jasidih, for school and admission information.</p><p><strong>⌖ Address</strong><br>Jasidih, Jharkhand, India<br><small>Add verified full postal address.</small></p><p><strong>☎ Phone</strong><br>Add the school's official phone number.</p><p><strong>✉ Email</strong><br>Add the school's official email.</p></div><div class="contact-card"><h3>Admission enquiry</h3><p>Official contact details can be added here so families can reach the school.</p><p class="note">This is not a working online form yet. A form service or backend is required to receive submissions.</p><a class="btn btn-gold" href="#home">Back to top ↑</a></div></div></section>
 </main>
-<footer>
-<p>© <span id="year"></span> New Horizon School, Jasidih</p>
-<p>Winners don't do different things, they do things differently.</p>
-</footer>
-<script>document.getElementById('year').textContent=new Date().getFullYear();</script>
-</body>
-</html>
+<footer class="footer"><strong>NEW HORIZON SCHOOL, JASIDIH</strong><p class="footer-motto">“Winners don't do different things, they do things differently.”</p><div class="footer-bottom"><span>© <span id="year"></span> New Horizon School, Jasidih</span><a href="#home">Back to top ↑</a></div></footer>
+<script>
+"use strict";
+const menuToggle=document.getElementById("menuToggle");
+const mainNav=document.getElementById("mainNav");
+menuToggle.addEventListener("click",function(){const open=mainNav.classList.toggle("open");menuToggle.setAttribute("aria-expanded",String(open));menuToggle.setAttribute("aria-label",open?"Close menu":"Open menu");menuToggle.textContent=open?"✕":"☰";});
+mainNav.querySelectorAll("a").forEach(function(link){link.addEventListener("click",function(){mainNav.classList.remove("open");menuToggle.setAttribute("aria-expanded","false");menuToggle.setAttribute("aria-label","Open menu");menuToggle.textContent="☰";});});
+document.getElementById("year").textContent=String(new Date().getFullYear());
+</script>
+</body></html>
